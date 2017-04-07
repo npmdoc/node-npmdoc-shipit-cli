@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"shipit-cli",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "shipit-cli",
+    "description": "api documentation for [shipit-cli (v3.0.0)](https://github.com/shipitjs/shipit) [![npm package](https://img.shields.io/npm/v/npmdoc-shipit-cli.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-shipit-cli) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-shipit-cli.svg)](https://travis-ci.org/npmdoc/node-npmdoc-shipit-cli)",
     "devDependencies": {
-        "shipit-cli": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "shipit-cli": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-shipit-cli",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-shipit-cli",
+    "keywords": [
+        "documentation",
+        "shipit-cli"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_shipit_cli.js",
+    "name": "npmdoc-shipit-cli",
+    "nameAlias": "npmdoc_shipit_cli",
+    "nameOriginal": "npmdoc-shipit-cli",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-shipit-cli"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
