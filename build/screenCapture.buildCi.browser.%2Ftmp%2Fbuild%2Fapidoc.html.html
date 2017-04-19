@@ -56,6 +56,24 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit-cli">
+            function <span class="apidocSignatureSpan"></span>shipit-cli
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit">
+            function <span class="apidocSignatureSpan">shipit-cli.</span>shipit
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.super_">
             function <span class="apidocSignatureSpan">shipit-cli.</span>super_
             <span class="apidocSignatureSpan">()</span>
@@ -65,7 +83,129 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">shipit-cli.</span>shipit.prototype</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">shipit-cli.</span>super_.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.shipit-cli.shipit">module shipit-cli.shipit</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.shipit">
+            function <span class="apidocSignatureSpan">shipit-cli.</span>shipit
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.super_">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.shipit-cli.shipit.prototype">module shipit-cli.shipit.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype._readyToRunTask">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>_readyToRunTask
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.blTask">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>blTask
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.initConfig">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initConfig
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.initSshPool">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initSshPool
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.initialize">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initialize
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.initializeEvents">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initializeEvents
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.local">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>local
+            <span class="apidocSignatureSpan">(command, options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.log">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>log
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.remote">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>remote
+            <span class="apidocSignatureSpan">(command, options, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.shipit-cli.shipit.prototype.remoteCopy">
+            function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>remoteCopy
+            <span class="apidocSignatureSpan">(src, dest, options, callback)</span>
+            </a>
 
         </li>
 
@@ -248,6 +388,68 @@
 
 
     <h2>
+        <a href="#apidoc.element.shipit-cli.shipit-cli" id="apidoc.element.shipit-cli.shipit-cli">
+        function <span class="apidocSignatureSpan"></span>shipit-cli
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Shipit(options) {
+  this.options = _.defaults(options || {}, {
+    stdout: process.stdout,
+    stderr: process.stderr,
+    log: console.log.bind(console)
+  });
+  this.environment = this.options.environment;
+
+  this.initializeEvents();
+
+  if (this.options.stdout === process.stdout)
+    process.stdout.setMaxListeners(100);
+
+  if (this.options.stderr === process.stderr)
+    process.stderr.setMaxListeners(100);
+
+  // Inherits from EventEmitter
+  Orchestrator.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit" id="apidoc.element.shipit-cli.shipit">
+        function <span class="apidocSignatureSpan">shipit-cli.</span>shipit
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Shipit(options) {
+  this.options = _.defaults(options || {}, {
+    stdout: process.stdout,
+    stderr: process.stderr,
+    log: console.log.bind(console)
+  });
+  this.environment = this.options.environment;
+
+  this.initializeEvents();
+
+  if (this.options.stdout === process.stdout)
+    process.stdout.setMaxListeners(100);
+
+  if (this.options.stderr === process.stderr)
+    process.stderr.setMaxListeners(100);
+
+  // Inherits from EventEmitter
+  Orchestrator.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.shipit-cli.super_" id="apidoc.element.shipit-cli.super_">
         function <span class="apidocSignatureSpan">shipit-cli.</span>super_
         <span class="apidocSignatureSpan">()</span>
@@ -265,6 +467,431 @@
     </ul>
 
 
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.shipit-cli.shipit" id="apidoc.module.shipit-cli.shipit">module shipit-cli.shipit</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.shipit" id="apidoc.element.shipit-cli.shipit.shipit">
+        function <span class="apidocSignatureSpan">shipit-cli.</span>shipit
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Shipit(options) {
+  this.options = _.defaults(options || {}, {
+    stdout: process.stdout,
+    stderr: process.stderr,
+    log: console.log.bind(console)
+  });
+  this.environment = this.options.environment;
+
+  this.initializeEvents();
+
+  if (this.options.stdout === process.stdout)
+    process.stdout.setMaxListeners(100);
+
+  if (this.options.stderr === process.stderr)
+    process.stderr.setMaxListeners(100);
+
+  // Inherits from EventEmitter
+  Orchestrator.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.super_" id="apidoc.element.shipit-cli.shipit.super_">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">super_ = function () {
+	EventEmitter.call(this);
+	this.doneCallback = undefined; // call this when all tasks in the queue are done
+	this.seq = []; // the order to run the tasks
+	this.tasks = {}; // task objects: name, dep (list of names of dependencies), fn (the task to run)
+	this.isRunning = false; // is the orchestrator running tasks? .start() to start, .stop() to stop
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.shipit-cli.shipit.prototype" id="apidoc.module.shipit-cli.shipit.prototype">module shipit-cli.shipit.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype._readyToRunTask" id="apidoc.element.shipit-cli.shipit.prototype._readyToRunTask">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>_readyToRunTask
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_readyToRunTask = function () {
+  if (_.find(this.tasks, {running: true, blocking: true}))
+    return false;
+
+  return Orchestrator.prototype._readyToRunTask.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.blTask" id="apidoc.element.shipit-cli.shipit.prototype.blTask">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>blTask
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">blTask = function (name) {
+  this.task.apply(this, arguments);
+
+  var task = this.tasks[name];
+  task.blocking = true;
+  return task;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```js
+shipit.task('pwd', function () {
+  return shipit.remote('pwd');
+});
+```
+
+#### shipit.<span class="apidocCodeKeywordSpan">blTask</span>(name, [deps], fn)
+
+Create a new Shipit task that will block other tasks during its execution (synchronous).
+
+If you use these type of task, the flow will be exactly the same as if you use [grunt](http://gruntjs.com).
+
+```js
+shipit.blTask('pwd', function () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.initConfig" id="apidoc.element.shipit-cli.shipit.prototype.initConfig">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initConfig
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initConfig = function (config) {
+  config = config || {};
+
+  if (!config[this.environment])
+    throw new Error('Environment "' + this.environment + '" not found in config');
+
+  this.config = _.assign({
+    branch: 'master',
+    keepReleases: 5,
+    shallowClone: false
+  }, config.default || {}, config[this.environment]);
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+If you are familiar with grunt or gulp, you will feel at home.
+
+### Create a `shipitfile.js`
+
+```js
+module.exports = function (shipit) {
+shipit.<span class="apidocCodeKeywordSpan">initConfig</span>({
+  staging: {
+    servers: 'myproject.com'
+  }
+});
+
+shipit.task('pwd', function () {
+  return shipit.remote('pwd');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.initSshPool" id="apidoc.element.shipit-cli.shipit.prototype.initSshPool">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initSshPool
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initSshPool = function () {
+  if (!this.config.servers)
+    throw new Error('Servers not filled');
+
+  var servers = _.isArray(this.config.servers) ? this.config.servers : [this.config.servers];
+  this.pool = new sshPool.ConnectionPool(servers, _.extend({}, this.options, _.pick(this.config, 'key', 'strict')));
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.initialize" id="apidoc.element.shipit-cli.shipit.prototype.initialize">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initialize
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function () {
+  this.emit('init');
+  return this.initSshPool();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.initializeEvents" id="apidoc.element.shipit-cli.shipit.prototype.initializeEvents">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>initializeEvents
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initializeEvents = function () {
+  var shipit = this;
+  var log = shipit.log.bind(shipit);
+
+  shipit.on('task_start', function (e) {
+    // Specific log for noop functions.
+    if (shipit.tasks[e.task].fn.toString() === 'function () {}')
+      return;
+
+    log('\nRunning', '\'' + chalk.cyan(e.task) + '\' task...');
+  });
+
+  shipit.on('task_stop', function (e) {
+    var task = shipit.tasks[e.task];
+    // Specific log for noop functions.
+    if (task.fn.toString() === 'function () {}')
+      return log(
+        'Finished', '\'' + chalk.cyan(e.task) + '\'',
+        chalk.cyan('[ ' + task.dep.join(', ') + ' ]')
+      );
+
+    var time = prettyTime(e.hrDuration);
+    log(
+      'Finished', '\'' + chalk.cyan(e.task) + '\'',
+      'after', chalk.magenta(time)
+    );
+  });
+
+  shipit.on('task_err', function (e) {
+    var msg = formatError(e);
+    var time = prettyTime(e.hrDuration);
+    log(
+      '\'' + chalk.cyan(e.task) + '\'',
+      chalk.red('errored after'),
+      chalk.magenta(time)
+    );
+    log(msg);
+  });
+
+  shipit.on('task_not_found', function (err) {
+    log(
+      chalk.red('Task \'' + err.task + '\' is not in your shipitfile')
+    );
+    log('Please check the documentation for proper shipitfile formatting');
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.local" id="apidoc.element.shipit-cli.shipit.prototype.local">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>local
+        <span class="apidocSignatureSpan">(command, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">local = function (command, options, cb) {
+  var shipit = this;
+
+  // local(command, cb)
+  if (_.isFunction(options)) {
+    cb = options;
+    options = undefined;
+  }
+
+  return new Promise(function (resolve, reject) {
+    shipit.log('Running "%s" on local.', command);
+
+    options = _.defaults(options || {}, {
+      maxBuffer: 1000 * 1024
+    });
+
+    var stdoutWrapper = new LineWrapper({prefix: '@ '});
+    var stderrWrapper = new LineWrapper({prefix: '@ '});
+
+    var child = childProcess.exec(command, options, function (err, stdout, stderr) {
+      if (err) return reject(err);
+      resolve({
+        child: child,
+        stdout: stdout,
+        stderr: stderr
+      });
+    });
+
+    if (shipit.options.stdout)
+      child.stdout.pipe(stdoutWrapper).pipe(shipit.options.stdout);
+
+    if (shipit.options.stderr)
+      child.stderr.pipe(stderrWrapper).pipe(shipit.options.stderr);
+  }).nodeify(cb);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```js
+shipit.start('task');
+shipit.start('task1', 'task2');
+shipit.start(['task1', 'task2']);
+```
+
+#### shipit.<span class="apidocCodeKeywordSpan">local</span>(command, [[options]](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback
+), [callback])
+
+Run a command locally and streams the result. This command take a callback or return a promise. It returns a result object containing
+ stdout, stderr and the child process object.
+
+```js
+shipit.local('ls -lah', {cwd: '/tmp/deploy/workspace'}).then(function (res) {
+console.log(res.stdout);
+console.log(res.stderr);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.log" id="apidoc.element.shipit-cli.shipit.prototype.log">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>log
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">log = function () {
+  this.options.log.apply(null, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### shipit.local(command, [[options]](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback
+), [callback])
+
+Run a command locally and streams the result. This command take a callback or return a promise. It returns a result object containing
+ stdout, stderr and the child process object.
+
+```js
+shipit.local('ls -lah', {cwd: '/tmp/deploy/workspace'}).then(function (res) {
+  console.<span class="apidocCodeKeywordSpan">log</span>(res.stdout);
+  console.log(res.stderr);
+  res.child.stdout.pipe(...);
+});
+```
+
+#### shipit.remote(command, [[options]](https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback
+), [callback])
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.remote" id="apidoc.element.shipit-cli.shipit.prototype.remote">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>remote
+        <span class="apidocSignatureSpan">(command, options, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">remote = function (command, options, cb) {
+  if (options &amp;&amp; options.cwd) {
+    command = 'cd "' + options.cwd.replace(/"/g, '\\"') + '" &amp;&amp; ' + command;
+    delete options.cwd;
+  }
+  return this.pool.run(command, options, cb);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  shipit.initConfig({
+    staging: {
+      servers: 'myproject.com'
+    }
+  });
+
+  shipit.task('pwd', function () {
+    return shipit.<span class="apidocCodeKeywordSpan">remote</span>('pwd');
+  });
+};
+```
+
+### Launch command
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.shipit-cli.shipit.prototype.remoteCopy" id="apidoc.element.shipit-cli.shipit.prototype.remoteCopy">
+        function <span class="apidocSignatureSpan">shipit-cli.shipit.prototype.</span>remoteCopy
+        <span class="apidocSignatureSpan">(src, dest, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">remoteCopy = function (src, dest, options, callback) {
+
+  // remoteCopy(command, callback)
+  if (_.isFunction(options)) {
+    callback = options;
+    options = undefined;
+  }
+
+  options = _.defaults(options || {}, {
+    ignores: this.config &amp;&amp; this.config.ignores ? this.config.ignores : [],
+    rsync: this.config &amp;&amp; this.config.rsync ? this.config.rsync : []
+  });
+
+  return this.pool.copy(src, dest, options, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  console.log(res[1].stdout); // stdout for second server
+  console.log(res[1].stderr); // stderr for second server
+  res[0].child.stdout.pipe(...); // child of second server
+});
+```
+
+#### shipit.<span class="apidocCodeKeywordSpan">remoteCopy</span>(src, dest, [options], [callback])
+
+Make a remote copy from a local path to a dest path.
+
+```js
+shipit.remoteCopy('/tmp/workspace', '/opt/web/myapp').then(...);
+```
+...</pre></li>
+    </ul>
 
 
 </div>
